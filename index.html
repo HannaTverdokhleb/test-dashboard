@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Dashboard</title>
+</head>
+<body>
+	<div class="row page-wrapper">
+		<aside class="sidebar">
+			<div class="logo">
+				<svg class="logo__icon" width="37" height="37">
+					<use href="/testtask/images/sprite.svg#logo"></use>
+				</svg>
+				<div class="logo__text">Dashboard</div>
+				<span class="logo__v">v.01</span>
+			</div>
+			<nav class="nav-menu">
+				<ul class="menu-list">
+					<li class="menu-item menu-item-dashboard">
+						<a href="#" class="menu-item__link">
+							<svg class="menu-item__link__icon svg-dash" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#key-square"></use>
+							</svg>
+							Dashboard
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-item menu-item-product">
+						<a href="#" class="menu-item__link">
+							<svg class="menu-item__link__icon svg-solid" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#3d-square"></use>
+							</svg>
+							Product
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-item menu-item-customers">
+						<a href="#" class="menu-item__link menu-item__link_active">
+							<svg class="menu-item__link__icon svg-dash" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#user-square"></use>
+							</svg>
+							Customers
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-item menu-item-income">
+						<a href="#" class="menu-item__link">
+							<svg class="menu-item__link__icon svg-dash" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#wallet-money"></use>
+							</svg>
+							Income
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-item menu-item-promote">
+						<a href="#" class="menu-item__link">
+							<svg class="menu-item__link__icon svg-solid" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#discount-shape"></use>
+							</svg>
+							Promote
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-item menu-item-help">
+						<a href="#" class="menu-item__link">
+							<svg class="menu-item__link__icon svg-solid" width="24" height="24">
+								<use href="/testtask/images/sprite.svg#message-question"></use>
+							</svg>
+							Help
+							<svg class="menu-item__link__arrow" width="16" height="16">
+								<use href="/testtask/images/sprite.svg#chevron-right"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-info">
+				<img src="images/user_photo.png" class="user-info__photo" alt="user photo" width="42" height="42">
+				<div class="user-info__text">
+					<div class="user-info__text__name user-name">Evano</div>
+					<div class="user-info__text__position">Project Manager</div>
+				</div>
+			</div>
+		</aside>
+		<main class="content">
+			<header class="header">
+				<div class="greeting">Hello <span class="greetting__name user-name">Evano</span> 👋🏼,</div>
+				<button type="button" class="burger-button">
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+				</button>
+			</header>
+			<section class="all-castomers">
+				<div class="all-castomers__row row">
+					<div class="all-castomers__headers">
+						<h1 class="title">All Customers</h1>
+						<div class="subtitle">Active Members</div>
+					</div>
+					<div class="search-wrepper">
+						<input type="search" class="search" placeholder="Search">
+						<svg class="search__icon" width="24" height="24">
+							<use href="/testtask/images/sprite.svg#search"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="table-wrapper">
+					<div class="table">
+						<ul class="table__heading">
+							<li class="table__heading__name name">Customer Name</li>
+							<li class="table__heading__name company">Company</li>
+							<li class="table__heading__name phone">Phone Number</li>
+							<li class="table__heading__name email">Email</li>
+							<li class="table__heading__name country">Country</li>
+							<li class="table__heading__name status">Status</li>
+						</ul>
+						<ul class="table__castomers">
+							<li class="table__castomer__item">
+								<p class="castomer__name">Jane Cooper</p>
+								<p class="castomer__company">Microsoft</p>
+								<p class="castomer__phone">(225) 555-0118</p>
+								<p class="castomer__email">jane@microsoft.com</p>
+								<p class="castomer__country">United States</p>
+								<p class="castomer__status active">active</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Floyd Miles</p>
+								<p class="castomer__company">Yahoo</p>
+								<p class="castomer__phone">(205) 555-0100</p>
+								<p class="castomer__email">floyd@yahoo.com</p>
+								<p class="castomer__country">Kiribati</p>
+								<p class="castomer__status inactive">inactive</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Ronald Richards</p>
+								<p class="castomer__company">Adobe</p>
+								<p class="castomer__phone">(302) 555-0107</p>
+								<p class="castomer__email">ronald@adobe.com</p>
+								<p class="castomer__country">Israel</p>
+								<p class="castomer__status inactive">inactive</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Marvin McKinney</p>
+								<p class="castomer__company">Tesla</p>
+								<p class="castomer__phone">(252) 555-0126</p>
+								<p class="castomer__email">marvin@tesla.com</p>
+								<p class="castomer__country">Iran</p>
+								<p class="castomer__status active">active</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Jerome Bell</p>
+								<p class="castomer__company">Google</p>
+								<p class="castomer__phone">(629) 555-0129</p>
+								<p class="castomer__email">jerome@google.com</p>
+								<p class="castomer__country">Réunion</p>
+								<p class="castomer__status active">active</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Kathryn Murphy</p>
+								<p class="castomer__company">Microsoft</p>
+								<p class="castomer__phone">(406) 555-0120</p>
+								<p class="castomer__email">kathryn@microsoft.com</p>
+								<p class="castomer__country">Curaçao</p>
+								<p class="castomer__status active">active</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Jacob Jones</p>
+								<p class="castomer__company">Yahoo</p>
+								<p class="castomer__phone">(208) 555-0112</p>
+								<p class="castomer__email">jacob@yahoo.com</p>
+								<p class="castomer__country">Brazil</p>
+								<p class="castomer__status active">active</p>
+							</li>
+							<li class="table__castomer__item">
+								<p class="castomer__name">Kristin Watson</p>
+								<p class="castomer__company">Facebook</p>
+								<p class="castomer__phone">(704) 555-0127</p>
+								<p class="castomer__email">kristin@facebook.com</p>
+								<p class="castomer__country">Åland Islands</p>
+								<p class="castomer__status inactive">inactive</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-footer row">
+					<div class="showing-data">Showing data 1 to 8 of 256K entries</div>
+					<ul class="table-pagination">
+						<li class="pagination__item"><a href="#" class="pagination__link">&lt;</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link current">1</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+						<li class="pagination__item"><span>...</span></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">40</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">&gt;</a></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
